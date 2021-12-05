@@ -1,0 +1,43 @@
+<html>
+   <head>
+     <style>
+	    div
+		{
+		   border:5px solid Blue;
+		   padding:15px;
+		   text-align:center;
+		}
+		img
+		{
+		  border:5px solid Blue;
+		  padding:10px;
+		}
+	 </style>
+   </head> 
+   <body>
+      <h3>Java Script Demo</h3><hr/>
+	  <h4>Enter Color:<input type="color" onchange="f1()" id="t1"/></h4><br/><br/>
+	  <div id="d1">
+	     <h1>Apply Style Using JS</h1>
+	  </div>
+      Enter Border Radius:<input type="range" onchange="f2()" min="0" max="200" id="t2" value="0"/><br/><br/>	
+
+	  <img id="i" src="https://wallpapercave.com/wp/wp4522115.jpg" width="300" height="300"/>
+    <script>
+	    function f1()
+		{
+		   var obj1=document.getElementById("d1");
+		   var obj2=document.getElementById("t1");
+		   
+		   obj1.style.backgroundColor=obj2.value;
+		}
+		function f2()
+		{
+		   var obj1=document.getElementById("i");
+		   var obj2=document.getElementById("t2");
+		   
+		   obj1.style.borderRadius=obj2.value+"px";
+		}
+    </script>	
+   </body>
+<html>
